@@ -35,6 +35,7 @@ const Create = (props) => {
             handleInput={props.handleInput}
             handleCollapsed={props.handleCollapsed}
             updateAvatar={props.updateAvatar}
+            avatar={props.avatar}
           />
 
           <div className="line"></div>

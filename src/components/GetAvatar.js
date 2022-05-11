@@ -59,6 +59,7 @@ function GetAvatar(props) {
   };
 
   const avatar = props.avatar === '' ? defaultAvatar : props.avatar;
+  console.log(props.avatar);
   return (
     <div className="get-avatar">
       <label className="get-avatar__label">
