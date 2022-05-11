@@ -1,0 +1,11 @@
+.main {
+  @media all and (min-width: 768px) {
+    min-height: 83vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 40px;
+    background: linear-gradient(to bottom, $white-four, $white 9%);
+  }
+}

@@ -1,0 +1,118 @@
+.landing {
+  height: calc(100vh - 110px);
+  width: 100%;
+  background-color: $white-four;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &__logo {
+    width: 250px;
+    height: 63px;
+    margin-bottom: 35.4px;
+  }
+  &__logo img {
+    width: 250px;
+    height: 63px;
+  }
+  &__title {
+    font-family: $merri;
+    font-size: 20px;
+    color: $orange;
+  }
+  &__text {
+    width: 264.8px;
+    font-size: 13px;
+    font-family: $open;
+    color: $dark-blue;
+  }
+  &__rectangle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px rgba(225, 115, 52, 0.2);
+
+    border-radius: 4px;
+    width: 268px;
+    height: 73.8px;
+    margin-top: 17.8px;
+    &--item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      align-items: center;
+      padding: 15px 20px 10px 20px;
+    }
+    &--item i {
+      width: 41px;
+      height: 23px;
+      color: $orange;
+      font-size: 22.4px;
+      margin: 0 0 10px 0;
+    }
+    &--item span {
+      font-size: 12.8px;
+      font-family: $open;
+      color: $gunmetal;
+    }
+  }
+  &__button {
+    background-color: $blue;
+    border-radius: 21px;
+    border: none;
+    width: 129px;
+    height: 42px;
+    margin-top: 38.6px;
+
+    &--link {
+      text-decoration: none;
+      color: $white-four;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .landing {
+    height: 100vh;
+    &__logo {
+      width: 419px;
+      height: 105px;
+    }
+    &__logo img {
+      width: 419px;
+      height: 105px;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__text {
+      font-size: 16px;
+      width: 331px;
+    }
+    &__rectangle {
+      width: 325px;
+      height: 86px;
+      margin-top: 27px;
+      &--item i {
+        font-size: 28px;
+      }
+      &--item span {
+        font-size: 16px;
+      }
+    }
+    &__button {
+      width: 129px;
+      height: 42px;
+      margin-top: 186px;
+    }
+  }
+}
+@media all and (min-width: 1200px) {
+  .landing {
+    height: 100vh;
+  }
+}

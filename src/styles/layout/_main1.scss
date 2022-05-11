@@ -1,0 +1,126 @@
+.main1 {
+  background: linear-gradient(to bottom, $silver, $pale-grey);
+  padding: 38px 35px 40px 35px;
+  @media all and(min-width:768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+  }
+  @media all and (min-width: 1200px) {
+    width: 60%;
+  }
+  &__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__reset {
+      width: 75px;
+      padding: 6px;
+      margin-bottom: 20px;
+      margin-left: 0;
+      font-family: $open;
+      font-size: 12px;
+      text-transform: uppercase;
+      border: solid 1px $white;
+      border-radius: 15px;
+      color: $gunmetal;
+      background-color: transparent;
+      .fa-solid {
+        padding-right: 5px;
+      }
+    }
+    &__text {
+      background-color: $white;
+      padding: 20px 20px 10px 0;
+      min-width: 240px;
+      max-width: 30ch;
+      overflow-wrap: break-word;
+      &--name {
+        font-family: $montse;
+        font-weight: bold;
+        font-size: 18px;
+        color: $dark-blue;
+        max-width: 220px;
+      }
+      &--profession {
+        font-family: $montse;
+        color: $gunmetal;
+        font-weight: 500;
+        max-width: 220px;
+      }
+    }
+    &__cat {
+      height: 200px;
+      background-image: url(../../images/gatito.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &__rrss {
+      background-color: $white;
+      margin-top: 0;
+      padding: 10px 0 10px 20px;
+      display: flex;
+      text-align: center;
+      &__link {
+        padding: 5px;
+        border: solid 2px $hospital-green;
+        border-radius: 16px;
+        margin-right: 10px;
+        color: $dark-blue;
+        font-size: 15px;
+        width: 30px;
+      }
+    }
+  }
+}
+
+.border {
+  border-left: 5px solid $blue;
+  width: 100%;
+  padding-left: 20px;
+}
+
+// palettes 
+
+.palette-1 {
+  .border {
+    border-color: $blue;
+  }
+  .main1__container__text--name {
+    color: $dark-blue;
+  }
+  .main1__container__rrss__link {
+    color: $dark-blue;
+    border-color: $hospital-green;
+  }
+}
+
+.palette-2 {
+  .border {
+    border-color: $rusty-red;
+  }
+  .main1__container__text--name {
+    color: $blood;
+  }
+  .main1__container__rrss__link {
+    color: $blood;
+    border-color: $tomato;
+  }
+}
+
+.palette-3 {
+  .border {
+    border-color: $faded-orange;
+  }
+  .main1__container__text--name {
+    color: $slate;
+  }
+  .main1__container__rrss__link {
+    color: $slate;
+    border-color: $light-grey-blue;
+  }
+}

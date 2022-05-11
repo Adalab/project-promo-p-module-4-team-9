@@ -1,0 +1,109 @@
+$font-14: 14px;
+$gunmetal: #54585a;
+
+.filled {
+  margin: 10px 20px;
+  display: flex;
+  font-family: $open;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $gunmetal;
+
+  &__text {
+    width: 98%;
+    margin: 20px 10px 20px 0;
+  }
+}
+
+.fa-keyboard {
+  color: $orange;
+  width: 24px;
+  height: 18px;
+  font-size: 18px;
+  margin: 23px 10px 20px 0;
+}
+
+.fill-arrow {
+  margin: 20px 10px 20px 0;
+}
+
+.fa-transform {
+  transform: rotate(180deg);
+}
+
+.form2 {
+  font-family: $open;
+  margin: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  padding-bottom: 30px;
+}
+
+.input {
+  height: 30px;
+  font-family: $open;
+  margin-top: 7px;
+  color: $gunmetal;
+  border: solid 1px $hospital-green;
+  outline-color: $orange;
+  padding-left: 9px;
+}
+
+.input::placeholder {
+  color: #c5c5c5;
+}
+
+.label1 {
+  font-size: $font-14;
+  color: $dark-blue;
+}
+
+.label {
+  font-size: $font-14;
+  color: $dark-blue;
+  margin-top: 20px;
+}
+
+.form2-submit {
+  width: 140px;
+  height: 30px;
+  background-color: $orange;
+  color: white;
+  font-size: 14px;
+  border-style: none;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3px;
+}
+
+.input-file {
+  display: none;
+}
+
+.container {
+  display: flex;
+  height: 30px;
+  margin-top: 7px;
+}
+
+.div {
+  width: 30px;
+  height: 30px;
+  border: $hospital-green 1px solid;
+  margin-left: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.collapsed {
+  display: none;
+}
+.line {
+  border-bottom: solid 1px $white-two;
+  margin: 30px 10px 0 10px;
+}

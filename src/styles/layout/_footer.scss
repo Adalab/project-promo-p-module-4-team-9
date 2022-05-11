@@ -1,0 +1,35 @@
+.footer {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: solid $white-two 1px;
+  background-color: $white;
+  &__title {
+    font-family: $open;
+    font-weight: 400px;
+    color: $white-two;
+    font-size: 14px;
+    padding: 18px 0 12px 0;
+  }
+
+  &__logo img {
+    width: 103px;
+    height: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px 10px 41px;
+
+    &__logo img {
+      margin-top: 10px;
+    }
+  }
+}

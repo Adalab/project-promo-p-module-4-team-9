@@ -1,0 +1,9 @@
+.main2 {
+  @media all and(min-width:768px) {
+    width: 60%;
+    margin-right: 20px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 40%;
+  }
+}
