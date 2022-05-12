@@ -1,5 +1,8 @@
+const URL_SERVER = "https://awesome-profile-cards.herokuapp.com/card";
+const URL_LOCAL = "http://localhost:4000/card"
+
 const dataApi = (data) => {
-  return fetch('https://awesome-profile-cards.herokuapp.com/card', {
+  return fetch(URL_LOCAL, {
     method: 'POST',
     body: JSON.stringify(data),
     headers: { 'Content-Type': 'application/json' },
