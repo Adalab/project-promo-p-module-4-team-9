@@ -12,12 +12,15 @@ server.use(
     limit: "10mb",
   })
 );
+
+server.set("view engine", "ejs");
+
 // Arrancamos el servidor en el puerto 3000
 const serverPort = 4000;
 server.listen(serverPort, () => {
   console.log(`Server listening at http:/localhost:${serverPort}`);
 });
-const saveCards = [];
+const savedCards = [];
 // Escribimos los endpoints que queramos
 server.post("/card", (req, res) => {
   if (
@@ -29,25 +32,35 @@ server.post("/card", (req, res) => {
     req.body.linkedin !== "" &&
     req.body.github !== ""
   ) {
-    const newCard = { ...req.body, id:uuidv4()};
-    saveCards.push(newCard)
+    const newCard = { ...req.body, id: uuidv4() };
+    savedCards.push(newCard)
     const responseSuccess = {
-        success: true,
-        cardURL: `https://localhost:4000/card/${newCard.id}`,
-      };
-      res.json(responseSuccess)
+      success: true,
+      cardURL: `https://localhost:4000/card/${newCard.id}`,
+    };
+    res.json(responseSuccess)
   }
   else {
     const responseError = {
-        success: false,
-        error: "Faltan parámetros",
-      };
-      res.json(responseError); 
+      success: false,
+      error: "Faltan parámetros",
+    };
+    res.json(responseError);
   }
 
-  
+
 }
 );
 
+server.get("/card/:id", (req, res) => {
+  console.log(req.params.id)
+  const userCard = savedCards.find(card => card.id === req.params.id)
+  res.render("card", userCard)
+})
+
 const staticServerPathWeb = './src/public-react'; // En esta carpeta ponemos los ficheros estáticos
 server.use(express.static(staticServerPathWeb));
+
+
+const staticServerPathStyles = './src/public-styles/main';
+server.use(express.static(staticServerPathStyles));
