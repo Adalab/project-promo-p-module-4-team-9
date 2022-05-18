@@ -17,49 +17,43 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="/main.css" rel="stylesheet" />
     <title>Awesome Profile Cards</title>
-    <script defer="defer" src="./static/js/main.227ecdfc.js"></script>
-    <link href="./main.css" rel="stylesheet" />
   </head>
   <body>
     <section class="main1 js-preview-container palette-1">
       <div class="main1__container">
         <div>
-          <button class="main1__container__reset js_buttonReset">
-            <i class="fa-solid fa-trash-can"></i>reset
-          </button>
           <div class="main1__container__text">
             <div class="border">
               <p class="main1__container__text--name js-preview-name">
-                Nombre Completo
+                <%=name%>
               </p>
               <p class="main1__container__text--profession js-preview-job">
-                Front-end developer
+                <%=job%>
               </p>
             </div>
           </div>
           <div class="profile">
             <div
               class="profile__avatar"
-              style="
-                background-image: url('./static/media/gatito.796fcabf0be315b3ab6d.jpg');
-              "
+              style="background-image: url(<%=photo%>)"
             ></div>
           </div>
           <nav class="main1__container__rrss">
-            <a class="js-preview-phone" href="tel: "
+            <a class="js-preview-phone" href="tel:<%=phone%>"
               ><i
                 class="main1__container__rrss__link fa-solid fa-mobile-screen-button"
               ></i></a
-            ><a class="js-preview-email" href="mailto: "
+            ><a class="js-preview-email" href="mailto:<%=email%> "
               ><i
                 class="main1__container__rrss__link fa-solid fa-envelope"
               ></i></a
-            ><a class="js-preview-linkedin" href=""
+            ><a class="js-preview-linkedin" href="<%=linkedin%>"
               ><i
                 class="main1__container__rrss__link fa-brands fa-linkedin-in"
               ></i></a
-            ><a class="js-preview-github" href=""
+            ><a class="js-preview-github" href="<%=github%>"
               ><i
                 class="main1__container__rrss__link fa-brands fa-github-alt"
               ></i
