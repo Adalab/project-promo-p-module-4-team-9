@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "./static/css/main.087fe7c7.css",
-    "main.js": "./static/js/main.227ecdfc.js",
+    "main.js": "./static/js/main.38a003ba.js",
     "static/media/gatito.jpg": "./static/media/gatito.796fcabf0be315b3ab6d.jpg",
     "static/media/tarjetas-molonas.png": "./static/media/tarjetas-molonas.488717f38ae8c822e5fd.png",
     "index.html": "./index.html",
     "main.087fe7c7.css.map": "./static/css/main.087fe7c7.css.map",
-    "main.227ecdfc.js.map": "./static/js/main.227ecdfc.js.map"
+    "main.38a003ba.js.map": "./static/js/main.38a003ba.js.map"
   },
   "entrypoints": [
     "static/css/main.087fe7c7.css",
-    "static/js/main.227ecdfc.js"
+    "static/js/main.38a003ba.js"
   ]
 }
